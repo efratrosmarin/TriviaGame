@@ -1,0 +1,41 @@
+.display-4, .btn-outline-secondary{
+
+    font-family: 'Fontdiner Swanky', cursive;
+    text-align: center;
+    color: rgb(194, 28, 45);
+    letter-spacing: 2px;
+}
+
+#countdown{
+
+    font-size: 45px;
+    text-align: center;
+    padding: 5px;
+  
+    color: rgb(194, 28, 45);
+}
+
+.jumbotron{
+
+    text-align: center;
+   
+    
+    
+}
+
+.background{
+
+    background-image: url("../images/glasses.png");
+    
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+
+    
+}
+
+
+
+
+
+
