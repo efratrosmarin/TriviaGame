@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+  
+
 var counter
     
     $(".startClock").click( function(){
@@ -14,14 +17,18 @@ var counter
               // Display 'counter' wherever you want to display it.
               if (counter === 0) {
               //    alert('this is where it happens');
-                  clearInterval(counter);
+                  // clearInterval(counter);
+                  setTimeout(function(){
+                    alert("Time Out!");
+                  });
+                 
               }
           
             }, 1000);
           
           })();
 
-
+          
 
  });
 

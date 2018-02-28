@@ -1,9 +1,25 @@
+/* .gradient-text {
+    background: -webkit-linear-gradient(pink, red);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  } */
+
+
 .display-4, .btn-outline-secondary{
+
+    background: -webkit-linear-gradient(pink, red);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 
     font-family: 'Fontdiner Swanky', cursive;
     text-align: center;
     color: rgb(194, 28, 45);
     letter-spacing: 2px;
+}
+
+p{
+
+    font-family: 
 }
 
 #count{
@@ -33,6 +49,8 @@
 
     
 }
+
+
 
 
 
