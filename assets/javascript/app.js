@@ -16,7 +16,7 @@ $(document).ready(function () {
     $(".check").hide();
 
     $("#quiz-results").addClass("resultspage");
-    
+
     var selValue = parseInt($('input[name=q1]:checked').val())
     var selValue2 = parseInt($('input[name=q2]:checked').val())
     var selValue3 = parseInt($('input[name=q3]:checked').val())
@@ -32,9 +32,9 @@ $(document).ready(function () {
     // $("#quiz-results").html("<h1> Your Final Score is: </h1>");
 
 
-    $("#quiz-results").html(selValue + selValue2 + selValue3);
+    $("#quiz-results").html("Your Final Score: " + (selValue + selValue2 + selValue3));
 
-    // document.write(selValue + selValue2 + selValue3)
+
   });
 
 
@@ -52,14 +52,16 @@ $(document).ready(function () {
       }
       // Display 'counter' wherever you want to display it.
       if (counter === 0) {
-        //    alert('this is where it happens');
+
         // clearInterval(counter);
-        setTimeout(function () {
+        // setTimeout(function () {
 
+        $("#quiz-area").hide();
+        $("#quiz-results").show();
+        $(".check").hide();
+        $("#quiz-results").addClass("resultspage");
+        $("#quiz-results").html("Times Up")
 
-          var header = document.getElementById("timesup")
-          header.innerHTML = "Times Up"
-        });
 
       }
 
