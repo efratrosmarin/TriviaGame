@@ -50,10 +50,29 @@ p{
     
 }
 
+h2{
+   color: red;
+
+   font-family: 'Courgette', cursive;
+    text-align: center;
+    
+    letter-spacing: 2px;
+
+}
 
 
+.resultspage{
+
+    color: red;
+    
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    
+    letter-spacing: 2px;
+    font-size: 50px;
 
 
+}
 
 
 
