@@ -28,7 +28,7 @@ $(document).ready(function () {
     console.log(selValue, selValue2, selValue3);
     
 
-    $("#quiz-results").html("Your Final Score: " + (selValue + selValue2 + selValue3 + selValue4));
+ var finalScore =   $("#quiz-results").html("Your Final Score: " + (selValue + selValue2 + selValue3 + selValue4))
 
 
   });

@@ -56,9 +56,10 @@
 
 .resultspage{
 
-    color: red;
+    color: rgb(59, 59, 59);
     
-    font-family: 'Courgette', cursive;
+    font-family: 'Vast Shadow', cursive;
+
     text-align: center;
     
     letter-spacing: 2px;
