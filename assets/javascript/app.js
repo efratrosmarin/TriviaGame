@@ -7,15 +7,16 @@ $(document).ready(function () {
   $("#quiz-results").hide();
   $(".check").hide();
   $("#count").show();
-
+  $(".h2").show();
   $(".check").on('click', function (event) {
     // Prevent page from reloading
     event.preventDefault();
     $("#quiz-area").hide();
     $("#quiz-results").show();
     $(".check").hide();
-
+    $(".h2").hide();
     $("#count").hide();
+    $(".startClock").hide();
 
     $("#quiz-results").addClass("resultspage");
 
@@ -68,7 +69,9 @@ $(document).ready(function () {
         $(".check").hide();
         $("#quiz-results").addClass("resultspage");
         $("#quiz-results").html("Time's Up")
-
+        $(".h2").hide();
+        $("#count").hide();
+        $(".startClock").hide();
 
       }
 
