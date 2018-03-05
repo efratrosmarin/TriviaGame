@@ -1,6 +1,7 @@
 $(document).ready(function () {
   var panel = $("#quiz-area");
-  
+  var wins = 0;
+  var losses = 0;
   var counter
   $("#quiz-area").show();
   $("#quiz-results").hide();
@@ -20,7 +21,7 @@ $(document).ready(function () {
     var selValue2 = parseInt($('input[name=q2]:checked').val())
     var selValue3 = parseInt($('input[name=q3]:checked').val())
     var selValue4 = parseInt($('input[name=q4]:checked').val())
-    console.log(selValue, selValue2, selValue3, selValue4);
+    console.log(selValue, selValue2, selValue3);
     //   if (val=0){
 
     //     document.write("<h2>Wrong Answer<h2>")
@@ -42,7 +43,7 @@ $(document).ready(function () {
 
   $(".startClock").click(function () {
 
-    counter = 10;
+    counter = 5;
 
     setInterval(function () {
       counter--;
@@ -55,25 +56,19 @@ $(document).ready(function () {
 
         // clearInterval(counter);
         // setTimeout(function () {
-          $(".startClock").hide();
+
         $("#quiz-area").hide();
         $("#quiz-results").show();
         $(".check").hide();
         $("#quiz-results").addClass("resultspage");
-        $("#quiz-results").html("Time's Up!")
+        $("#quiz-results").html("Time's Up")
 
 
       }
 
-      
-
     }, 1000);
 
-    
-
   });
-
-
 
 
 

@@ -17,10 +17,7 @@
     letter-spacing: 2px;
 }
 
-p{
 
-    font-family: 
-}
 
 #count{
 
@@ -75,4 +72,8 @@ h2{
 }
 
 
+.card-title{
+
+    color:red;
+}
 
