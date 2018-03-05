@@ -3,9 +3,9 @@ $(document).ready(function () {
   var wins = 0;
   var losses = 0;
   var counter
-  $("#quiz-area").show();
+  $("#quiz-area").hide();
   $("#quiz-results").hide();
-  $(".check").show();
+  $(".check").hide();
 
 
   $(".check").on('click', function (event) {
@@ -43,7 +43,11 @@ $(document).ready(function () {
 
   $(".startClock").click(function () {
 
-    counter = 5;
+    if(counter = 5){
+      $("#quiz-area").show();
+      $(".check").show();
+
+    }
 
     setInterval(function () {
       counter--;
@@ -59,7 +63,7 @@ $(document).ready(function () {
 
         $("#quiz-area").hide();
         $("#quiz-results").show();
-        $(".check").hide();
+        // $(".check").hide();
         $("#quiz-results").addClass("resultspage");
         $("#quiz-results").html("Time's Up")
 
