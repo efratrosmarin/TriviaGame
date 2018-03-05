@@ -1,13 +1,14 @@
 $(document).ready(function () {
-  var panel = $("#quiz-area");
-  var wins = 0;
-  var losses = 0;
+  
+  
   var counter
   $("#quiz-area").hide();
   $("#quiz-results").hide();
   $(".check").hide();
   $("#count").show();
   $(".h2").show();
+
+
   $(".check").on('click', function (event) {
     // Prevent page from reloading
     event.preventDefault();
@@ -25,16 +26,7 @@ $(document).ready(function () {
     var selValue3 = parseInt($('input[name=q3]:checked').val())
     var selValue4 = parseInt($('input[name=q4]:checked').val())
     console.log(selValue, selValue2, selValue3);
-    //   if (val=0){
-
-    //     document.write("<h2>Wrong Answer<h2>")
-    //   }else
-
-    //   {document.write("<h2>Correct!<h2>")
-
-    // }
-    // $("#quiz-results").html("<h1> Your Final Score is: </h1>");
-
+    
 
     $("#quiz-results").html("Your Final Score: " + (selValue + selValue2 + selValue3 + selValue4));
 
@@ -78,6 +70,16 @@ $(document).ready(function () {
     }, 1000);
 
   });
+
+
+  var btn = document.querySelector('.mouse-cursor-gradient-tracking')
+btn.onmousemove = function(e) {
+  var x = e.pageX - btn.offsetLeft
+  var y = e.pageY - btn.offsetTop
+  btn.style.setProperty('--x', x + 'px')
+  btn.style.setProperty('--y', y + 'px')
+}
+
 
 
 
