@@ -6,7 +6,7 @@ $(document).ready(function () {
   $("#quiz-area").hide();
   $("#quiz-results").hide();
   $(".check").hide();
-
+  $("#count").show();
 
   $(".check").on('click', function (event) {
     // Prevent page from reloading
@@ -14,6 +14,8 @@ $(document).ready(function () {
     $("#quiz-area").hide();
     $("#quiz-results").show();
     $(".check").hide();
+
+    $("#count").hide();
 
     $("#quiz-results").addClass("resultspage");
 
@@ -43,10 +45,10 @@ $(document).ready(function () {
 
   $(".startClock").click(function () {
 
-    if(counter = 5){
+    if(counter = 30){
       $("#quiz-area").show();
       $(".check").show();
-
+      $("#count").show();
     }
 
     setInterval(function () {
