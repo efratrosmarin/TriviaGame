@@ -16,12 +16,12 @@
 
 
 #count{
-
-    font-size: 45px;
+  font-family: 'Mina', sans-serif;
+    font-size: 100px;
     text-align: center;
     padding: 5px;
   
-    color: rgb(194, 28, 45);
+    color: rgb(71, 67, 68);
 }
 
 .jumbotron{
@@ -58,12 +58,11 @@
 
     color: rgb(59, 59, 59);
     
-    font-family: 'Vast Shadow', cursive;
-
+    font-family: 'Mina', sans-serif;
     text-align: center;
     
     letter-spacing: 2px;
-    font-size: 50px;
+    font-size: 100px;
 
 
 }

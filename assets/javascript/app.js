@@ -12,6 +12,8 @@ $(document).ready(function () {
   $(".check").on('click', function (event) {
     // Prevent page from reloading
     event.preventDefault();
+
+    // clearInterval();
     $("#quiz-area").hide();
     $("#quiz-results").show();
     $(".check").hide();
