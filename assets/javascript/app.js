@@ -63,7 +63,7 @@ $(document).ready(function () {
 
         $("#quiz-area").hide();
         $("#quiz-results").show();
-        // $(".check").hide();
+        $(".check").hide();
         $("#quiz-results").addClass("resultspage");
         $("#quiz-results").html("Time's Up")
 
