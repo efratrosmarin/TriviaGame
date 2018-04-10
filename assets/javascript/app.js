@@ -1,13 +1,13 @@
 $(document).ready(function () {
-  
-  
-  var counter
+
+
+  var counter = $("#count");
   $("#quiz-area").hide();
   $("#quiz-results").hide();
   $(".check").hide();
   $("#count").show();
   $(".h2").show();
-
+  $(".reset").hide();
 
   $(".check").on('click', function (event) {
     // Prevent page from reloading
@@ -20,23 +20,30 @@ $(document).ready(function () {
     $(".h2").hide();
     $("#count").hide();
     $(".startClock").hide();
-
+    $(".reset").show();
     $("#quiz-results").addClass("resultspage");
 
     var selValue = parseInt($('input[name=q1]:checked').val())
     var selValue2 = parseInt($('input[name=q2]:checked').val())
     var selValue3 = parseInt($('input[name=q3]:checked').val())
     var selValue4 = parseInt($('input[name=q4]:checked').val())
-    console.log(selValue, selValue2, selValue3);
     
+    // var finalScore = $("#quiz-results").html("Your Final Score: " + (selValue))
 
- var finalScore =   $("#quiz-results").html("Your Final Score: " + (selValue + selValue2 + selValue3 + selValue4))
+    // var finalScore = $("#quiz-results").html("Your Final Score: " + (selValue2))
 
+    // var finalScore = $("#quiz-results").html("Your Final Score: " + (selValue3))
 
+    // var finalScore = $("#quiz-results").html("Your Final Score: " + (selValue4))
+
+    var finalScore = $("#quiz-results").html("Your Final Score: " + (selValue + selValue2 + selValue3 + selValue4))
+   
+
+    function myStopFunction() {
+      clearInterval(counter);
+  }
+  myStopFunction();
   });
-
-
-
 
   $(".startClock").click(function () {
 
@@ -73,14 +80,27 @@ $(document).ready(function () {
 
   });
 
+  $(".reset").on('click', function (event) {
 
+
+$("#quiz-area").hide();
+  $("#quiz-results").hide();
+  $(".check").hide();
+  $("#count").show();
+  $(".h2").show();
+  $(".reset").hide();
+  $("#count").reset();
+
+
+});
+  
   var btn = document.querySelector('.mouse-cursor-gradient-tracking')
-btn.onmousemove = function(e) {
-  var x = e.pageX - btn.offsetLeft
-  var y = e.pageY - btn.offsetTop
-  btn.style.setProperty('--x', x + 'px')
-  btn.style.setProperty('--y', y + 'px')
-}
+  btn.onmousemove = function (e) {
+    var x = e.pageX - btn.offsetLeft
+    var y = e.pageY - btn.offsetTop
+    btn.style.setProperty('--x', x + 'px')
+    btn.style.setProperty('--y', y + 'px')
+  }
 
 
 
